@@ -1,0 +1,404 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background:url("../img/prueba-juego-final.jpg");
+    background-size: cover
+  
+   
+}
+section{
+    width: 100%;
+    border: 2px transparent;
+    margin: 120px auto;
+    display: flex;
+}
+
+section .cont-botones{
+    width: 75%;
+    min-height: 500px;
+    text-align: center;
+    padding: 40px 20px;
+    border: 2px solid #03fc41;
+    backdrop-filter: blur(5px);
+}
+
+section .cont-figuras{
+    width: 30%;
+    min-height: 500px;
+    text-align: center;
+    padding: 40px 20px;
+    border: 2px solid #03fc41;
+    backdrop-filter: blur(5px);
+}
+.contenedor-control {
+  width: 100%;
+  min-height: 300px;
+  margin-top: auto;
+  display: flex;
+  
+  background-image: url("/img/minimalist-wavy-white-background-d02550.png");
+}
+
+.cont-flechas {
+  width: 42%;
+  height: 180px;
+  text-align: center;
+  padding: 40px 20px;
+  border: transparent
+}
+
+
+.cont-acciones {
+  width: 58%;
+    min-height: 500px;
+    text-align: center;
+    padding: 40px 20px;
+    border:transparent
+}
+h2{
+    font-size: 26px;
+    color: #fff;
+    /*font-family*/
+    margin-bottom: 50px;
+
+}
+.cont-botones button{
+    width: 100px; 
+    height: 100px;
+    border-radius: 50%;
+    background:transparent;
+    color: #fff;
+    border: transparent;
+    margin: 10px;
+    transition: .4s;
+    
+}
+
+
+
+#circulo {
+  
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: url("../img/circulo.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position:center;
+ 
+}
+  
+
+
+
+#rectangulo {
+  
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: url("../img/rectangulo.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position:center;
+ 
+}
+
+#triangulo {
+  
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: url("../img/triangulo.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position:center top;
+  
+ 
+}
+
+#girar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: url("../img/girar.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#arriba {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: url("../img/arriba.png");
+  background-size: 60% 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#abajo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: url("../img/abajo.png");
+  background-size: 60% 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#izquierda {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: url("../img/izquierda.png");
+  background-size: 60% 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#derecha {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: url("../img/derecha.png");
+  background-size: 60% 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#ocultar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: url("../img/ocultar.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#gif {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: url("../img/GIF.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#degrade {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: url("../img/degrade.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#figura.degrade {
+ 
+  background: linear-gradient(to right, #ff0000, #00ff00);
+}
+#panel {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: url("../img/panelIz.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#panelS {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: url("../img/superior.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+
+
+
+/*.cont-botones button:hover{
+    background: #fff;
+    color: darkgoldenrod;
+}*/
+
+#figura{
+    width: 220px;
+    height: 220px;
+    background: #fff;
+    border:2px solid darkgoldenrod;
+    margin: 10px auto; 
+    transition: 1s;
+}
+#figura.circulo{
+    border-radius: 50%;
+    background: #000;
+    
+}
+
+#figura.rectangulo{
+    width: 350px;
+    height: 220px;
+    border-radius: 0; /* Restablece el radio de borde a 0 */
+    background: blue;
+}
+#figura.triangulo {
+    background:transparent;
+    width: 0;
+    height: 0;
+    border-top: transparent;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 173.2px solid #13e269; /* Ajusta el tamaño del triángulo según tus necesidades */
+    margin: 10px auto;
+}
+@keyframes girar {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  #figura.girando {
+    animation: girar 2s linear infinite;
+  }
+  #figura.mover-arriba {
+    animation: moverArriba 1s forwards;
+  }
+  
+  @keyframes moverArriba {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-100px);
+    }
+  }
+  #figura.mover-abajo {
+    animation: moverAbajo 1s forwards;
+  }
+  
+  @keyframes moverAbajo {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(100px);
+    }
+  }
+  #figura.mover-izquierda {
+    animation: moverIzquierda 1s forwards;
+  }
+  
+  @keyframes moverIzquierda {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-150px);
+    }
+  }
+  #figura.mover-derecha {
+    animation: moverDerecha 1s forwards;
+  }
+  
+  @keyframes moverDerecha {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(150px);
+    }
+  }
+  
+  @keyframes aparecer-desvanecer {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  .oculto img {
+    display: none;
+  }
+  .panelIzquierdo{
+    width: 350;
+    height: 100vh;
+    position: absolute;
+    left: -450px;
+    top: 0;
+    z-index: 999;
+    background: #fff;
+    padding: 50px 40px;
+    transition: .5s;
+  }
+
+  .panelIzquierdo h3{
+    font-size: 30px;
+    color: #00ff00;
+   
+  }
+     .panelIzquierdo ul a{
+      display: block;
+      padding: 10px 15px;
+     margin: 8px 0;
+     max-width: 250px;
+     background: #000;
+     color: #00ff00
+     }
+
+     .panelIzquierdo.activo{
+      left:0;
+     }
+     .close{
+      position: absolute;
+      right: 30px;
+      top: 25px;
+      color: #999;
+      text-decoration:none;
+      font-size: 25px;
+     }
+            .panelSuperior {
+              width: 100%;
+              height: 140vh;
+              position: absolute;
+              top: -300vh;
+              z-index: 998;
+              background-image: url("../img/prueba-juego-final.jpg");
+              background-size: cover;
+              padding: 50px 40px;
+              transition: .5s;
+            }
+      
+          
+      
+            .panelSuperior ul a {
+              display: block;
+              padding: 10px 15px;
+              margin: 8px 0;
+              max-width: 250px;
+              background: #000;
+              color: #00ff00
+            }
+      
+            .panelSuperior.activo {
+              top: 0;
+            }
+      
+            .closeS {
+              position: absolute;
+              right: 100px;
+              top: 10px;
+              color: #999;
+              text-decoration: none;
+              font-size: 25px;
+            }
+    
+  
+  
+  
+  
+  
+  
+  

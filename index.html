@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras-Dom</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section>
+        
+        <div class="cont-botones">
+            <h2>INTERACCIONES</h2>
+            <section class="contenedor-control">
+            <div class="cont-flechas">
+                <button id="arriba" class="boton-arriba" onclick="moverArriba()"></button>
+                <div class="contenedor-botones">
+                <button id="izquierda" class="boton-izquierda" onclick="moverIzquierda()"></button>
+                <button id="derecha" class="boton-derecha" onclick="moverDerecha()"></button>
+                </div>
+                <button id="abajo" class="boton-abajo" onclick="moverAbajo()"></button>
+              
+            </div>
+            <div class="cont-acciones">
+            <button id="circulo" class="boton-circulo" onclick="circulo()"></button>
+            <button id="rectangulo" class="boton-rectangulo" onclick="rectangulo()"></button>
+            <button id="triangulo" class="boton-triangulo" onclick="triangulo()"></button>
+            <button id="girar" class="boton-girar" onclick="girarFigura()"></button>
+            <button id="ocultar" class="ocultar-figura" onclick="ocultarFigura()"></button>
+            <button  id="gif" onclick="mostrarGif()"></button>
+            <button id="degrade" class="degrade" onclick="degrade()"></button>
+            <button id="panel" onclick="panelIzquierdo()"></button>
+            <button id="panelS" onclick="panelSuperior()"></button>
+            </section>
+            </div>
+        </div>
+
+        
+        
+        <div class="cont-figuras">
+        <h2>FIGURA</h2>
+        
+        <div id="figura" class=""></div>
+        </div>
+
+    </section>
+    <div class="panelIzquierdo">
+      <a href="#" class="close"  onclick="panelIzquierdo()">x</a>
+      <h3>Menú principal</h3>
+      <ul>
+        <a href="#">inicio</a>
+        <a href="#">nosotros</a>
+        <a href="#">producto</a>
+        <a href="#">contacto</a>
+      </ul>
+    </div>
+    <div class="panelSuperior">
+      <a href="#" class="closeS" onclick="panelSuperior()">x</a>
+
+    </div>
+    <script src="JS/main.js"></script>
+</body>
+</html>
